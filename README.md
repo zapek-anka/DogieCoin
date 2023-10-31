@@ -1,4 +1,4 @@
-Test for Magwai
+<h1>Тестовое задание для компании Magwai</h1>
 
-Запуск в режиме разработки: npm run start
-Сборка для production: npm run build
+<p>Запуск в режиме разработки: npm run start</p>
+<p>Сборка для production: npm run build</p>

@@ -453,7 +453,9 @@ body {
       .header__btn-wrap .btn:first-child {
         margin-bottom: 6px; }
   .header__logo-icon {
-    width: 112px; }
+    width: 112px;
+    background-image: url('../img/magwai.svg');
+    background-size: 0; }
 
 .nav {
   order: -1; }

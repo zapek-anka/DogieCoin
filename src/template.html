@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dogie Coin Test</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__burger js-toggle"></div>
+        <a class="header__logo" href="#">
+            <img class="header__logo-icon" src="./icons/magwai.svg" alt="logo">
+        </a>
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">УСЛУГИ</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">АБОНЕМЕНТЫ</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">ПОЧЕМУ МЫ</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">ОБОРУДОВАНИЕ</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">АКЦИИ</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">FAQ</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="nav__link" target="_blank">КОНТАКТЫ</a>
+            </li>
+        </ul>
+        <div class="header__btn-wrap">
+            <a href="tel:123" class="btn btn_callback"></a>
+            <button class="btn btn_beige js-open-modal">
+                <span class="btn__text">Оставить заявку</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__info">
+                <h1 class="title">
+                    Полет Илона Маска и&nbsp;DOGIE COIN
+                </h1>
+                <p class="hero__preview">В прошлый четверг все офигели от полета DOGIE COIN на марс.</p>
+                <button class="btn btn_beige js-open-modal">
+                    <span class="btn__text">Оставить заявку</span>
+                </button>
+            </div>
+        </section>
+        <section class="cards-section">
+            <h2 class="title title_secondary">Карточки</h2>
+            <div class="cards-section__wrap js-card-wrap"></div>
+            <button class="btn btn_beige btn_download js-get-cards">
+                <span class="btn__text">Загрузить еще</span>
+            </button>
+        </section>
+        <div class="modal__overlay js-modal">
+            <div class="modal">
+                <div class="modal__close-btn js-close-modal"></div>
+                <h3 class="modal__header js-form-header">Оставьте свои данные и&nbsp;мы&nbsp;с&nbsp;Вами&nbsp;свяжемся!
+                </h3>
+                <form class="form js-callback-form">
+                    <div class="form__input-wrap">
+                        <input id="username" class="form__input" type="text" name="name" autocomplete="off"
+                            placeholder="Введите Ваше имя">
+                        <small></small>
+                    </div>
+                    <div class="form__input-wrap">
+                        <input id="phone" class="form__input" name="phone" autocomplete="off"
+                            placeholder="Номер телефона">
+                        <small></small>
+                    </div>
+                    <div class="form__input-wrap">
+                        <input id="email" class="form__input" name="email" autocomplete="off"
+                            placeholder="Электронная почта">
+                        <small></small>
+                    </div>
+                    <button type="submit" class="btn btn_beige">
+                        <span class="btn__text">Отправить</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

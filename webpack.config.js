@@ -11,13 +11,15 @@ module.exports = {
         assetModuleFilename: 'assets/images/[name][ext]'
     },
     module: {
-        rules: [{
-            test: /\.(s*)css$/,
-            use: [
-                cssExtract.loader,
-                'css-loader',
-                'sass-loader',
-            ]},
+        rules: [
+            {
+                test: /\.(s*)css$/,
+                use: [
+                    cssExtract.loader,
+                    'css-loader',
+                    'sass-loader',
+                ]
+            },
             {
                 test: /\.(png|jpg|gif|eot|ttf|woff)$/,
                 type: 'asset/resource'
